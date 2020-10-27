@@ -1,6 +1,6 @@
 {
   "editor.detectIndentation": false,
-  "cSpell.words": [
-    "nums"
-  ]
+  "python.dataScience.notebookFileRoot": "${fileDirname}",
+  "python.analysis.extraPaths": ["solutions"],
+  "cSpell.words": ["nums"]
 }
