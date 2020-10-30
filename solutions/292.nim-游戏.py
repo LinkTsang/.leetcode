@@ -9,8 +9,8 @@ from helper import *
 
 class Solution:
   def canWinNim(self, n: int) -> bool:
-    return n % 4 != 0
-
+    # return n % 4 != 0
+    return (n & 3) != 0
 
 # @lc code=end
 assertEqual(Solution().canWinNim(1), True)
@@ -24,3 +24,4 @@ assertEqual(Solution().canWinNim(8), False)
 assertEqual(Solution().canWinNim(9), True)
 assertEqual(Solution().canWinNim(10), True)
 assertEqual(Solution().canWinNim(11), True)
+
