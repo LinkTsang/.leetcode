@@ -8,6 +8,9 @@ import sys
 from math import *
 from typing import *
 from collections import *
+from pprint import pprint
+import unittest
+from unittest import TestCase
 
 
 class TreeNode:
@@ -20,3 +23,7 @@ class TreeNode:
 def assertEqual(actual, excepted):
   if actual != excepted:
     raise RuntimeError(f'Excepted {excepted}, got {actual}')
+
+
+def run_tests():
+  unittest.main(argv=[''], verbosity=2, exit=False)
