@@ -11,7 +11,7 @@ from collections import *
 from pprint import pprint
 import unittest
 from unittest import TestCase
-
+from bisect import *
 
 class TreeNode:
   def __init__(self, val=0, left=None, right=None):
