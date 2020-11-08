@@ -24,6 +24,18 @@ class Solution:
 
 
 # @lc code=end
+
+# @lc test=start
+[-1, -8, 0, 5, -9]
+14
+[4, 3, 2]
+20
+[-1, -4, -5]
+0
+[-2, 5, -1, 0, 3, -3]
+35
+# @lc test=end
+
 assertEqual(Solution().maxSatisfaction([-1, -8, 0, 5, -9]), 14)
 assertEqual(Solution().maxSatisfaction([4, 3, 2]), 20)
 assertEqual(Solution().maxSatisfaction([-1, -4, -5]), 0)
