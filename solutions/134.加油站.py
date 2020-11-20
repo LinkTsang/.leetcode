@@ -13,6 +13,26 @@ class Solution:
   def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
     delta = [g - c for g, c in zip(gas, cost)]
     n = len(delta)
+
+    i = 0
+    while i < n:
+      s = 0
+      for j in chain(range(i, n), range(0, i)):
+        s += delta[j]
+        if s < 0:
+          i = j + 1
+          break
+      else:
+        return i
+
+    return -1
+# @lc code=end
+
+
+class Solution:
+  def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+    delta = [g - c for g, c in zip(gas, cost)]
+    n = len(delta)
     for i in range(n):
       if delta[i] < 0:
         continue
@@ -26,6 +46,3 @@ class Solution:
       if ok:
         return i
     return -1
-
-
-# @lc code=end
